@@ -1,0 +1,44 @@
+{
+  "name": "iletimerkezi/iletimerkezi-laravel",
+  "version": "1.0.0",
+  "homepage": "https://www.iletimerkezi.com",
+  "description": "İletiMerkezi SMS API for Laravel",
+  "type": "library",
+  "keywords": [
+    "iletimerkezi",
+    "otp",
+    "verify",
+    "iys",
+    "sms",
+    "api",
+    "sdk",
+    "api-client",
+    "laravel"
+  ],  
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "",
+      "email": "john@doe.com"
+    }
+  ],
+  "require": {
+     "php": ">=7.4",
+     "iletimerkezi/iletimerkezi-php": "1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "IletiMerkezi\\SMS\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IletiMerkezi\\SMS\\IletiMerkeziServiceProvider"
+      ],
+      "aliases": {
+        "IletiMerkezi": "IletiMerkezi\\SMS\\Facades\\IletiMerkezi"
+      }
+    }
+  }
+}
