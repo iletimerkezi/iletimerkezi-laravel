@@ -3,5 +3,5 @@
 return [
   'key' => '',
   'hash' => '',
-  'sender' => ''
+  'sender' => 'APITEST'
 ];
